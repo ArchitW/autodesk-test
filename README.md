@@ -1,9 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## AutoDesk FrontEnd
+
+## Cloning
+`git clone git@github.com:ArchitW/autodesk-test.git`
+
+## Installing Node Package
+In the project directory, you can run: `npm install`
 
 ## Run Project
 
-In the project directory, you can run:
+In the project directory, you can run: `npm start`
 
 ## Live URL
 
-Uou can visit live version of this app on Heroku [Click here](https://github.com/facebook/create-react-app).
+Uou can visit live version of this app on Heroku [Click here](https://autodesk-test-2020.herokuapp.com/).
