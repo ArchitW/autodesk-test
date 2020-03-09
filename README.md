@@ -12,4 +12,4 @@ In the project directory, you can run: `npm start`
 
 ## Live URL
 
-Uou can visit live version of this app on Heroku [Click here](https://autodesk-test-2020.herokuapp.com/).
+You can visit live version of this app on Heroku [Click here](https://autodesk-test-2020.herokuapp.com/).
