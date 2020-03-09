@@ -1,23 +1,22 @@
 import React from 'react';
 import RegisterMessage from './components/RegisterMessage';
-import FieldValidation from './components/FieldValidation';
-import './App.css';
+import Login from './components/Login';
+import Footer from './components/Footer';
+import PopUp from './components/PopUp';
+function App(props) {
+	const query = new URLSearchParams(props.location.search);
+	const isRegistered = query.get('success');
 
-function App() {
+	const user = query.get('user');
 	return (
 		<React.Fragment>
+			{isRegistered && <PopUp />}
+
 			<div className="wrapper">
-				<h2 className="sub-header">Sign in</h2>
-				<div className="form-group">
-					<label>Username</label>
-					<input className="" type="text" placeholder="name@example.com" />
-					<FieldValidation errorMessage="" />
-				</div>
-				<div className="form-group">
-					<button className="btn btn-primary btn-block">Next</button>
-				</div>
+				<Login user={isRegistered ? user : ''} />
 			</div>
 			<RegisterMessage />
+			<Footer />
 		</React.Fragment>
 	);
 }
